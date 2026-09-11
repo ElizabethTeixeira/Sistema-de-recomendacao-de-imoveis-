@@ -1,0 +1,40 @@
+/* Paleta e tokens globais do Sistema de Recomendação de Imóveis */
+:root {
+  --cor-azul: #106EBE;
+  --cor-azul-escuro: #0B4F87;
+  --cor-azul-claro: #E8F2FC;
+  --cor-menta: #0FFCBE;
+  --cor-menta-escura: #0BC99A;
+
+  --cor-texto: #1B2430;
+  --cor-texto-suave: #5B6B7C;
+  --cor-fundo: #F4F7FA;
+  --cor-branco: #FFFFFF;
+  --cor-borda: #DCE4EC;
+
+  --cor-sucesso: #1FA971;
+  --cor-erro: #E5484D;
+  --cor-alerta: #F2A93B;
+
+  --fonte-base: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+
+  --raio-sm: 6px;
+  --raio-md: 12px;
+  --raio-lg: 18px;
+  --raio-pill: 999px;
+
+  --sombra-sm: 0 1px 3px rgba(16, 110, 190, 0.08), 0 1px 2px rgba(16, 110, 190, 0.06);
+  --sombra-md: 0 8px 24px rgba(16, 110, 190, 0.12);
+  --sombra-lg: 0 16px 40px rgba(16, 110, 190, 0.18);
+
+  --espaco-1: 4px;
+  --espaco-2: 8px;
+  --espaco-3: 12px;
+  --espaco-4: 16px;
+  --espaco-5: 24px;
+  --espaco-6: 32px;
+  --espaco-7: 48px;
+
+  --largura-conteudo: 1180px;
+  --transicao: 0.18s ease;
+}
