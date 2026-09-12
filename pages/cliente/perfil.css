@@ -1,0 +1,11 @@
+.largura-perfil { max-width: 680px; }
+
+.form-acoes {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--espaco-4);
+}
+
+@media (max-width: 560px) {
+  .form-acoes .btn { width: 100%; }
+}
