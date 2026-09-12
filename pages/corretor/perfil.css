@@ -1,0 +1,15 @@
+.largura-perfil { max-width: 680px; }
+
+.linha-foto { display: flex; align-items: center; gap: var(--espaco-3); }
+.linha-foto .avatar { width: 56px; height: 56px; }
+.linha-foto input[type="file"] { flex: 1; }
+
+.form-acoes {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--espaco-4);
+}
+
+@media (max-width: 560px) {
+  .form-acoes .btn { width: 100%; }
+}
