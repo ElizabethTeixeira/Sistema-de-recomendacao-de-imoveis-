@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastrar imóvel · Corretor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../assets/css/variables.css" />
+  <link rel="stylesheet" href="../../assets/css/global.css" />
+  <link rel="stylesheet" href="./imovel-form.css" />
+</head>
+<body>
+  <header id="app-header" class="app-header"></header>
+
+  <main class="container spacer-topo largura-form">
+    <a class="link-voltar" href="dashboard.html">← Voltar para meus imóveis</a>
+    <h1 id="titulo-form">Novo imóvel</h1>
+    <p class="texto-suave">Preencha os dados do imóvel para publicá-lo na busca dos clientes.</p>
+
+    <form id="form-imovel" class="superficie superficie-pad cartao-sombra spacer-topo" novalidate>
+      <input type="hidden" id="imovel-id" />
+
+      <div class="form-linha">
+        <div class="form-grupo">
+          <label for="tipo">Tipo de imóvel</label>
+          <select class="input" id="tipo" required>
+            <option value="">Selecione</option>
+          </select>
+        </div>
+        <div class="form-grupo">
+          <label for="bairro">Bairro</label>
+          <input class="input" id="bairro" placeholder="Ex: Centro" required />
+        </div>
+      </div>
+
+      <div class="form-linha">
+        <div class="form-grupo">
+          <label for="preco">Preço (R$)</label>
+          <input class="input" type="number" id="preco" min="0" step="1000" required />
+        </div>
+        <div class="form-grupo">
+          <label for="areaM2">Área (m²)</label>
+          <input class="input" type="number" id="areaM2" min="0" step="1" required />
+        </div>
+      </div>
+
+      <div class="form-linha">
+        <div class="form-grupo">
+          <label for="quartos">Quartos</label>
+          <input class="input" type="number" id="quartos" min="0" step="1" required />
+        </div>
+        <div class="form-grupo">
+          <label for="vagas">Vagas de garagem</label>
+          <input class="input" type="number" id="vagas" min="0" step="1" required />
+        </div>
+      </div>
+
+      <div class="form-grupo">
+        <label for="status">Status</label>
+        <select class="input" id="status">
+          <option value="ativo">Ativo (visível para clientes)</option>
+          <option value="inativo">Inativo (oculto da busca)</option>
+        </select>
+      </div>
+
+      <div class="form-grupo">
+        <label for="campo-caracteristica">Características</label>
+        <input class="input" id="campo-caracteristica" placeholder="Ex: Piscina — pressione Enter para adicionar" />
+        <div id="lista-caracteristicas" class="lista-caracteristicas"></div>
+      </div>
+
+      <div class="form-grupo">
+        <label for="input-fotos">Fotos do imóvel</label>
+        <input class="input" type="file" id="input-fotos" accept="image/*" multiple />
+        <span class="campo-ajuda" id="contador-fotos">0/10 fotos adicionadas</span>
+        <div id="grade-fotos" class="grade-fotos"></div>
+      </div>
+
+      <p id="erro-imovel" class="campo-erro" role="alert"></p>
+
+      <div class="form-acoes">
+        <a href="dashboard.html" class="btn btn-secundario">Cancelar</a>
+        <button type="submit" class="btn btn-primario">Salvar imóvel</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="../../assets/js/storage.js"></script>
+  <script src="../../assets/js/hash.js"></script>
+  <script src="../../assets/js/auth.js"></script>
+  <script src="../../assets/js/utils.js"></script>
+  <script src="../../assets/js/layout.js"></script>
+  <script src="../../assets/js/seed.js"></script>
+  <script src="./imovel-form.js"></script>
+</body>
+</html>
