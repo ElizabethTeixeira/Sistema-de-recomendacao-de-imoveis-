@@ -1,0 +1,53 @@
+body.pagina-auth {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(15, 252, 190, 0.18), transparent 50%),
+    var(--cor-azul-escuro);
+  padding: var(--espaco-5);
+}
+
+.auth-caixa {
+  width: 100%;
+  max-width: 420px;
+}
+
+.auth-voltar {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.85rem;
+  margin-bottom: var(--espaco-3);
+}
+.auth-voltar:hover { color: #fff; }
+
+.auth-cartao {
+  background: var(--cor-branco);
+  padding: var(--espaco-6) var(--espaco-5);
+}
+
+.auth-cabecalho { text-align: center; margin-bottom: var(--espaco-5); }
+.auth-icone {
+  width: 56px; height: 56px; margin: 0 auto var(--espaco-3);
+  border-radius: var(--raio-md);
+  background: var(--cor-azul-claro);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.6rem;
+}
+.auth-cabecalho h1 { font-size: 1.3rem; margin-bottom: 4px; }
+
+.auth-dica {
+  text-align: center;
+  font-size: 0.78rem;
+  margin-top: var(--espaco-4);
+}
+
+.auth-rodape {
+  text-align: center;
+  font-size: 0.88rem;
+  margin-top: var(--espaco-4);
+  color: var(--cor-texto-suave);
+}
+.auth-rodape a { color: var(--cor-azul); font-weight: 600; }
+.auth-rodape a:hover { text-decoration: underline; }
