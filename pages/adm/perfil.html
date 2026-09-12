@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu perfil · Administrador</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../assets/css/variables.css" />
+  <link rel="stylesheet" href="../../assets/css/global.css" />
+  <link rel="stylesheet" href="./perfil.css" />
+</head>
+<body>
+  <header id="app-header" class="app-header"></header>
+
+  <main class="container spacer-topo largura-perfil">
+    <h1>Meu perfil</h1>
+    <p class="texto-suave">Atualize seu nome, e-mail de acesso e senha.</p>
+
+    <form id="form-perfil" class="superficie superficie-pad cartao-sombra spacer-topo" novalidate>
+      <div class="form-grupo">
+        <label for="nome">Nome</label>
+        <input class="input" id="nome" required />
+      </div>
+      <div class="form-grupo">
+        <label for="email">E-mail</label>
+        <input class="input" type="email" id="email" required />
+      </div>
+      <div class="form-linha">
+        <div class="form-grupo">
+          <label for="nova-senha">Nova senha</label>
+          <input class="input" type="password" id="nova-senha" autocomplete="new-password" />
+          <span class="campo-ajuda">Deixe em branco para manter a senha atual.</span>
+        </div>
+        <div class="form-grupo">
+          <label for="confirmar-senha">Confirmar nova senha</label>
+          <input class="input" type="password" id="confirmar-senha" autocomplete="new-password" />
+        </div>
+      </div>
+      <p id="erro-perfil" class="campo-erro" role="alert"></p>
+      <div class="form-acoes">
+        <button type="submit" class="btn btn-primario">Salvar alterações</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="../../assets/js/storage.js"></script>
+  <script src="../../assets/js/hash.js"></script>
+  <script src="../../assets/js/auth.js"></script>
+  <script src="../../assets/js/utils.js"></script>
+  <script src="../../assets/js/layout.js"></script>
+  <script src="../../assets/js/seed.js"></script>
+  <script src="./perfil.js"></script>
+</body>
+</html>
