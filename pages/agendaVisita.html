@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Agendar Visita - ImobMatch</title>
+<link rel="stylesheet" href="../assets/CSS/style.css">
+</head>
+<body>
+<main class="container">
+<h2>📅 Agendar Visita ao Imóvel</h2>
+<form id="form-visita">
+<label for="data-visita">Selecione o Dia:</label>
+<input type="date" id="data-visita" required>
+<label for="hora-visita">Selecione o Horário:</label>
+<select id="hora-visita" required>
+<option value="">-- Escolha um horário --</option>
+<option value="09:00">09:00h</option>
+<option value="11:00">11:00h</option>
+<option value="14:00">14:00h</option>
+<option value="16:00">16:00h</option>
+</select>
+<button type="submit">Confirmar Agendamento</button>
+</form>
+<p id="mensagem-confirmacao"></p>
+</main>
+</body>
+</html>
