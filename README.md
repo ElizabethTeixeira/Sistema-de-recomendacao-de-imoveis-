@@ -2,11 +2,10 @@
 https://elizabethteixeira.github.io/Sistema-de-recomendacao-de-imoveis-/
 
 # ImobMatch — Sistema de Recomendação de Imóveis
-Projeto desenvolvido para a disciplina de Engenharia de Software /
-Desenvolvimento Web (UESPI).
+Projeto desenvolvido no Curso de Tecnologias e Sistema para Internet como parte de atividades avaliativas da disciplina de Projeto Integrador 2 (UESPI).
 
 ## Tecnologias Utilizadas
-- **Back-end:** Node.js, Express, Prisma ORM, BCrypt, JavaScript
+- **Back-end:** Node.js, Express, Prisma ORM, JavaScript
 - **Front-end:** HTML5, CSS3, JavaScript (Fetch API)
 
 ## Como Rodar o Projeto Localmente
