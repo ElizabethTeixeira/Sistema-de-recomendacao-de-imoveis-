@@ -4,16 +4,11 @@ https://elizabethteixeira.github.io/Sistema-de-recomendacao-de-imoveis-/
 # ImobMatch — Sistema de Recomendação de Imóveis
 Projeto desenvolvido para a disciplina de Engenharia de Software /
 Desenvolvimento Web (UESPI).
-## Integrantes da Equipe
-- Ana Sabrina [Preencher Sobrenome]
-- Elane [Preencher Sobrenome]
-- Elizabeth Teixeira
-- Hélio [Preencher Sobrenome]
-- Marta [Preencher Sobrenome]
-- Regina Lucia Ferreira Dos Santos
+
 ## Tecnologias Utilizadas
 - **Back-end:** Node.js, Express, Prisma ORM, BCrypt, JavaScript
 - **Front-end:** HTML5, CSS3, JavaScript (Fetch API)
+
 ## Como Rodar o Projeto Localmente
 ### 1. Back-end (Servidor)
 ```bash
